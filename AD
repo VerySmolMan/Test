@@ -1,3 +1,0 @@
-$mode = "WinThreshold"
-Install-WindowsFeature -Name "AD-Domain-Services" -IncludeManagementTools
-Install-ADDSForest -ForestMode $mode -Domainmode $mode -DomainName "Test.se" -SafeModeAdministratorPassword (ConvertTo-SecureString -String "12345678.abc" -AsPlainText -Force) -InstallDns -Force
